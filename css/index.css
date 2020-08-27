@@ -1,1 +1,319 @@
-/* Should be empty until you compile your LESS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My styles */
+
+a{
+	text-decoration:none;
+}
+
+html{
+	font-size:62.5%;
+	overflow-x: hidden;
+	line-height:62.5%;
+}
+
+body{
+	font-size:1.6rem;
+	line-height:2.4rem;
+	color: #222222;
+	font-family: 'Roboto', sans-serif;
+}
+
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin:0;
+	max-width:100%;
+}
+
+/* .links{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: end;
+	
+}
+
+.navLink{
+		display: inline-block;
+		margin: 1% 2%;
+		padding: .5% 3%;
+	
+} */
+
+.topMenu{
+	display:flex;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+	background: #99a4af;
+	padding: 1% 2%;
+	font-weight: bold;
+	color: white;
+	width: 100%;
+	font-size:2.4rem;
+}
+
+.topMenu a {
+	color:white;
+}
+
+.mainImage{
+	background:url("../img/home/home-jumbotron.png") no-repeat bottom;
+	background-size:cover;
+	background-attachment: fixed;
+	height:90vh;
+	display:flex;
+}
+
+.heroText{
+	font-weight: bold;
+	color:white;
+	display: inline-block;
+	align-self: flex-end;
+	width:35%;
+	font-size: 6.4rem;
+	Line-height: 7.5rem;
+	margin:3%;
+}
+
+.subheading{
+	font-size:2.8rem;
+	font-weight: bold;
+	/* padding-bottom: 4%; */
+}
+
+.part{
+	margin: 3% auto;
+	width:75%;
+	/* text-align: ce; */
+}
+
+.bottomSpacing{
+	padding-bottom: 4%;
+}
+
+.item{
+	display: flex;
+	justify-content: space-between;
+	/* flex-direction: row-reverse; */
+	margin-bottom: 5%;
+}
+
+.right {
+	flex-direction: row-reverse;
+	/* padding-right:3%; */
+	
+}
+/* 
+.left {
+	padding-left:3%;
+} */
+
+.item div{
+	display: flex;
+	flex-direction: column;
+	/* padding:2% 4%; */
+	width:50%;
+	align-content: flex-start;
+	margin:auto;
+	/* justify-content: space-between; */
+}
+
+.item .left{
+	padding-left:2%;
+}
+
+.item img{
+	width:49%;
+	/* padding:2%; */
+	/* text-align: left; */
+	/* padding:1% 0%; */
+}
+
+.button{
+	text-align: center;
+	display:inline-block;
+	width:30%;
+	/* padding-top:2%; */
+	margin-top:4%;
+	/* margin:2%; */
+	color:  #222222;
+	padding:1% 1%;
+	border: 1px solid #222222;
+}
+
+.label{
+	display: block;
+	background:#d8d8d8;
+	width:30%;
+	
+	/* margin-top:-500px; */
+	transform: translate(0,-5.0rem);
+	padding: 3%;
+	letter-spacing: 3px;
+	border: 1px solid white;
+	
+	/* text-align: right; */
+}
+
+.boxRight{
+	margin-left:auto;
+	margin-right:0; 
+}
+
+.label h3{
+	font-size:2.4rem;
+	text-align: center;
+}
+
+.innerText{
+	width:50%;
+	margin: 0 auto;
+}
+
+.innerText p{
+	margin-bottom:4%;
+}
+
+.recent{
+	width:100%;
+}
+
+.recentDesignItem{
+	margin-bottom: 8%;
+}
+
+footer{
+	background:#828282;
+	color:white;
+	
+	padding:4% 12% .5% 12%;
+	/* display:flex; */
+}
+
+footer .subheading{
+	line-height:3rem;
+}
+
+.innerFooter{
+	display: flex;
+	justify-content: space-between;
+}
+
+.innerFooter .subheading{
+	font-size:2rem;
+}
+
+.input{
+	margin-top:2%;
+	width:100%;
+	border:none;
+	border-radius: 3%;
+	padding:3%;
+	display: block;
+}
+
+small {
+	font-size:1.2rem;
+}
+
+@media (max-width:600px){
+	/* .topMenu{
+		justify-content: space-between;
+		text-align: left;
+	} */
+}
+
+/* .first{
+
+} */
+
+/* You can achieve this with the following approach:
+
+place the <input> in a <label> with position:relative
+give the <label> an ::after pseudo-element with position:absolute
+set box-sizing of the <input> to border-box
+give the <input> a padding-right equal to the width of the ::after pseudo-element
+Working Example: */
+
+/* label, input {
+    position: relative;
+    display: block;
+    padding-right: 76px;
+    width: 170px;
+    box-sizing: border-box;
+}
+
+label::after {
+    content: '.' attr(email-input);
+    position: absolute;
+    top: 4px;
+    left: 94px;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 12px;
+    display: block;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+} */
+
+/* .wrapper{
+	line-height:2.4rem;
+	font-size:1.6rem;
+	background:#FFFFFF;
+	color:#222222;
+	font-family: 'Roboto', sans-serif;
+} */

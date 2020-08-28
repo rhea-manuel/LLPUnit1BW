@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact Us</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+	rel="stylesheet">
 	<link rel="stylesheet" href="css/index.css">
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -19,19 +21,26 @@
 Contactd Us Content  -->
 	<header>
 		<nav class="topMenu">
-			
 
-				<a href="index.html">S&J</a>
-			
-				<button id="hamburger"><img class=""  src="img/nav-hamburger.png"></button>
+			<a href="index.html">S&J</a>
 
-				<div id="overlay">
-					<div class="content">
-						<span class="close">X</span>
-						<p>Some text in the Modal..</p>
-					</div>
-				</div>
+			<button id="hamburger" onclick="openNav()"><img class="" src="img/nav-hamburger.png"></button>
+
+			<div id="myNav" class="overlay">
+
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="material-icons">&times;</i></a>
+			<!-- <a "</a> -->
+
+			<!-- Overlay content -->
+			<div class="overlay-content">
+				<a href="index.html" >Home</a>
+				<a href="contact.html" class="current">Contact</a>
+			</div>
+
+			</div>
 		</nav>
+
 		<div class="heroImage contact">
 			<!-- Even though this is the biggest text on the page, I used the <p> tag because it's more like
 	flavor text, rather than descriptive text. -->
@@ -42,7 +51,7 @@ Contactd Us Content  -->
 
 	</header>
 
-	
+
 
 	<!-- The main section with most of the contact information -->
 	<section class="part contact">

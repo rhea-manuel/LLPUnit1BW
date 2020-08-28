@@ -10,19 +10,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -30,25 +18,30 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -56,34 +49,33 @@ table {
 
 /* My styles */
 
-button{
-	border:none;
+button {
+	border: none;
 	background: none;
 }
 
-a{
-	text-decoration:none;
+a {
+	text-decoration: none;
 }
 
-html{
-	font-size:62.5%;
+html {
+	font-size: 62.5%;
 	overflow-x: hidden;
-	line-height:62.5%;
-	
+	line-height: 62.5%;
 }
 
-body{
-	font-size:1.6rem;
-	line-height:2.4rem;
+body {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
 	color: #222222;
 	font-family: 'Roboto', sans-serif;
 }
 
-*{
-	box-sizing:border-box;
-	padding:0;
-	margin:0;
-	max-width:100%;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
 }
 
 /* .links{
@@ -104,8 +96,8 @@ body{
 INDEX + GENERAL STYLES
 --------------------------- */
 
-.topMenu{
-	display:flex;
+.topMenu {
+	display: flex;
 	align-items: center;
 	align-content: center;
 	justify-content: space-between;
@@ -114,50 +106,49 @@ INDEX + GENERAL STYLES
 	font-weight: bold;
 	color: white;
 	width: 100%;
-	font-size:2.4rem;
-	
+	font-size: 2.4rem;
 }
 
 .topMenu a {
-	color:white;
+	color: white;
 }
 
-.heroImage{
-	background:url("../img/home/home-jumbotron.png") no-repeat bottom;
-	background-size:cover;
+.heroImage {
+	background: url("../img/home/home-jumbotron.png") no-repeat bottom;
+	background-size: cover;
 	background-attachment: fixed;
-	height:90vh;
-	display:flex;
+	height: 90vh;
+	display: flex;
 }
 
-.heroText{
+.heroText {
 	font-weight: bold;
-	color:white;
+	color: white;
 	display: inline-block;
 	align-self: flex-end;
-	width:35%;
+	width: 35%;
 	font-size: 6.4rem;
 	Line-height: 7.5rem;
-	margin:3%;
+	margin: 3%;
 }
 
-.subheading{
-	font-size:2.8rem;
+.subheading {
+	font-size: 2.8rem;
 	font-weight: bold;
 	/* padding-bottom: 4%; */
 }
 
-.part{
+.part {
 	margin: 3% auto;
-	width:75%;
+	width: 75%;
 	/* text-align: ce; */
 }
 
-.bottomSpacing{
+.bottomSpacing {
 	padding-bottom: 4%;
 }
 
-.item{
+.item {
 	display: flex;
 	justify-content: space-between;
 	/* flex-direction: row-reverse; */
@@ -167,142 +158,139 @@ INDEX + GENERAL STYLES
 .right {
 	flex-direction: row-reverse;
 	/* padding-right:3%; */
-	
 }
+
 /* 
 .left {
 	padding-left:3%;
 } */
 
-.item div{
+.item div {
 	display: flex;
 	flex-direction: column;
 	/* padding:2% 4%; */
-	width:50%;
+	width: 50%;
 	align-content: flex-start;
-	margin:auto;
+	margin: auto;
 	/* justify-content: space-between; */
 }
 
-.item .left{
-	padding-left:2%;
+.item .left {
+	padding-left: 2%;
 }
 
-.item img{
-	width:49%;
+.item img {
+	width: 49%;
 	/* padding:2%; */
 	/* text-align: left; */
 	/* padding:1% 0%; */
 }
 
-.button{
+.button {
 	text-align: center;
-	display:inline-block;
-	width:30%;
+	display: inline-block;
+	width: 30%;
 	/* padding-top:2%; */
-	margin-top:4%;
+	margin-top: 4%;
 	/* margin:2%; */
-	color:  #222222;
-	padding:1% 1%;
+	color: #222222;
+	padding: 1% 1%;
 	border: 1px solid #222222;
 }
 
-.label{
+.label {
 	display: block;
-	background:#d8d8d8;
-	width:30%;
-	
+	background: #d8d8d8;
+	width: 30%;
 	/* margin-top:-500px; */
-	transform: translate(0,-5.0rem);
+	transform: translate(0, -5.0rem);
 	padding: 3%;
 	letter-spacing: 10px;
 	border: 1px solid white;
-	
 	/* text-align: right; */
 }
 
-.boxRight{
-	margin-left:auto;
-	margin-right:0; 
+.boxRight {
+	margin-left: auto;
+	margin-right: 0;
 }
 
-.label h3{
-	font-size:2rem;
+.label h3 {
+	font-size: 2rem;
 	text-align: center;
 }
 
-.innerText{
-	width:50%;
+.innerText {
+	width: 50%;
 	margin: 0 auto;
 }
 
-.innerText p{
-	margin-bottom:4%;
+.innerText p {
+	margin-bottom: 4%;
 }
 
-.recent{
-	width:100%;
+.recent {
+	width: 100%;
 }
 
-.recentDesignItem{
+.recentDesignItem {
 	margin-bottom: 8%;
 }
 
-footer{
-	background:#828282;
-	color:white;
-	
-	padding:4% 12% .5% 12%;
+footer {
+	background: #828282;
+	color: white;
+	padding: 4% 12% .5% 12%;
 	/* display:flex; */
 }
 
-footer .subheading{
-	line-height:3rem;
+footer .subheading {
+	line-height: 3rem;
 }
 
-.innerFooter{
+.innerFooter {
 	display: flex;
 	justify-content: space-between;
 }
 
-.innerFooter .subheading{
-	font-size:2rem;
+.innerFooter .subheading {
+	font-size: 2rem;
 }
 
-.input{
-	margin-top:2%;
-	width:100%;
-	border:none;
+.input {
+	margin-top: 2%;
+	width: 100%;
+	border: none;
 	border-radius: 3%;
-	padding:3%;
+	padding: 3%;
 	display: block;
 }
 
 small {
-	font-size:1.2rem;
+	font-size: 1.2rem;
 }
 
-.full{
-	display:block;
+.full {
+	display: block;
 }
 
-.mobile{
+.mobile {
 	display: none;
 }
 
-.copyright{
-	text-align: center; 
-	margin:4% auto 0 auto; 
-	display:block; 
-	padding-bottom:0
+.copyright {
+	text-align: center;
+	margin: 4% auto 0 auto;
+	display: block;
+	padding-bottom: 0
 }
-
 
 /* ------------------------
 CONTACT PAGE STYLES
 --------------------------- */
-.heroImage.contact{
-	height:50vh;
+
+.heroImage.contact {
+	height: 50vh;
 	background-image: url(../img/contact/contact-jumbotron.png);
 	background-position-y: bottom;
 	/* background-size: cover; */
@@ -311,57 +299,147 @@ CONTACT PAGE STYLES
 	/* background-position: right; */
 }
 
-.part.contact{
-	width:90%;
-	display:flex;
+.part.contact {
+	width: 90%;
+	display: flex;
 	justify-content: space-around;
 	margin: 6% auto;
 }
 
-.input.contact{
+.input.contact {
 	border: 1px solid grey;
 	border-radius: 5px;
 }
 
-.button.contact{
-	width:auto;
-	padding:2.5% 10%;
+.button.contact {
+	width: auto;
+	padding: 2.5% 10%;
 }
 
-textarea{
-	width:100%;
-	min-height:20vh;
+textarea {
+	width: 100%;
+	min-height: 20vh;
 }
 
-.formItem{
-	padding-bottom:5%;
+.formItem {
+	padding-bottom: 5%;
 }
 
-.city{
-	margin-top:15%;
+.city {
+	margin-top: 15%;
 }
 
-.city h3{
+.city h3 {
 	font-weight: bold;
-	font-size:2rem;
+	font-size: 2rem;
 }
 
-form{
-	width:50%;
+form {
+	width: 50%;
 }
 
-#overlay {
-	position: fixed; /* Sit on top of the page content */
-	display: none; /* Hidden by default */
-	width: 100%; /* Full width (cover the whole page) */
-	height: 100%; /* Full height (cover the whole page) */
-	top: 0;
+.overlay {
+	/* Height & width depends on how you want to reveal the overlay (see JS below) */
+	height: 100%;
+	/* display:none; */
+	width: 0%;
+	position: fixed;
+	/* Stay in place */
+	z-index: 1;
+	/* Sit on top */
 	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-	cursor: pointer; /* Add a pointer on hover */
+	top: 0;
+	background-color: rgb(156, 166, 176);
+	/* Black fallback color */
+	background-color: rgba(156, 166, 176, 0.9);
+	/* Black w/opacity */
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
+	transition: 0.25s;
+	/* animation:fadein .5s; */
+	/* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+@keyframes hvr-pulse-shrink {
+	to {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+	}
+}
+
+.hvr-pulse-shrink {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+.hvr-pulse-shrink:hover, .hvr-pulse-shrink:focus, .hvr-pulse-shrink:active {
+	-webkit-animation-name: hvr-pulse-shrink;
+	animation-name: hvr-pulse-shrink;
+	-webkit-animation-duration: 0.3s;
+	animation-duration: 0.3s;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	animation-direction: alternate;
+}
+
+/* @keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+} */
+
+/* Position the content inside the overlay */
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 3.0rem;
+}
+
+/* The navigation links inside the overlay */
+
+.overlay a {
+	padding: 1%;
+	text-decoration: none;
+	font-size: 3.6rem;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.overlay a:hover, .overlay a:focus {
+	color: #5c5355
+}
+
+.overlay .current {
+	color: #5c5355;
+}
+
+/* Position the close button (top right corner) */
+
+.overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+}
+
+.material-icons {
+	font-size: 5rem;
 }
 
 /* @media(max-width:501px){
@@ -374,134 +452,106 @@ form{
 	}
 } */
 
-@media (max-width:768px){
-
+@media (max-width:768px) {
 	/* --------------
 	INDEX & GENERAL STYLES
 	----------------- */
-	.topMenu{
+	.topMenu {
 		justify-content: space-between;
 		padding: 4%;
 	}
-	
-	.topMenu img{
-		height:3.5rem;
+	.topMenu img {
+		height: 3.5rem;
 	}
-
-	.topMenu a{
-		font-size:4rem;
-		
+	.topMenu a {
+		font-size: 4rem;
 	}
-
-	.heroImage{
-		height:50vh;
-		padding-bottom:2%;
+	.heroImage {
+		height: 50vh;
+		padding-bottom: 2%;
 	}
-
-	.part{
-		width:100%;
-	}
-
-	.item{
-		width:90%;
-		margin:0 auto;
-		flex-direction: column;
-	}
-
-	.item div{
-		width:100%;
-	}
-
-	.item img{
-		width:100%;
-		height:40vh;
-		margin:0 auto 5% auto;
-	}
-
-	.button{
-		width:100%;
-		margin-bottom: 7%;
-	}
-
-	.label{
-		width:90%;
-		margin: 0 auto;
-		transform: translate(0,-3.0rem);
-		
-	}
-
-	h2{
-		padding-left:2%;
-	}
-
-	.label h3{
-		font-size:3rem;
-		padding:3%;
-	}
-
-	.mobile{
-		display: block;
-		height:100%;
+	.part {
 		width: 100%;
 	}
-
-	.full{
-		display: none;
-	}
-
-	.innerText{
-		width:90%;
-	}
-
-	.innerFooter{
+	.item {
+		width: 90%;
+		margin: 0 auto;
 		flex-direction: column;
 	}
-
-	footer{
+	.item div {
+		width: 100%;
+	}
+	.item img {
+		width: 100%;
+		height: 40vh;
+		margin: 0 auto 5% auto;
+	}
+	.button {
+		width: 100%;
+		margin-bottom: 7%;
+	}
+	.label {
+		width: 90%;
+		margin: 0 auto;
+		transform: translate(0, -3.0rem);
+	}
+	h2 {
+		padding-left: 2%;
+	}
+	.label h3 {
+		font-size: 3rem;
+		padding: 3%;
+	}
+	.mobile {
+		display: block;
+		height: 100%;
+		width: 100%;
+	}
+	.full {
+		display: none;
+	}
+	.innerText {
+		width: 90%;
+	}
+	.innerFooter {
+		flex-direction: column;
+	}
+	footer {
 		padding: 5%;
 	}
-
-	.innerFooter div{
+	.innerFooter div {
 		padding-bottom: 3%;
 	}
-
 	.copyright {
 		/* margin: 0;
 		padding:0;
 		text-align: left; */
 		display: inline;
 	}
-
 	/* --------------
 	CONTACT STYLES
 	----------------- */
-
-	.part.contact{
-		width:90%;
-		display:flex;
+	.part.contact {
+		width: 90%;
+		display: flex;
 		justify-content: space-around;
 		margin: 15% auto;
 		flex-direction: column;
 	}
-
-	.subheading.formItem{
+	.subheading.formItem {
 		margin-bottom: 10%;
 	}
-
-	form{
-		width:100%;
+	form {
+		width: 100%;
 		margin-bottom: 10%;
 	}
-
-	.subheading{
-		padding-left:0;
-		margin-left:0;
+	.subheading {
+		padding-left: 0;
+		margin-left: 0;
 	}
-
 	/* button.contact{
 		margin-bottom:10%;
 	} */
-	
 }
 
 /* .first{

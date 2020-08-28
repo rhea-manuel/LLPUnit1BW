@@ -56,6 +56,11 @@ table {
 
 /* My styles */
 
+button{
+	border:none;
+	background: none;
+}
+
 a{
 	text-decoration:none;
 }
@@ -64,6 +69,7 @@ html{
 	font-size:62.5%;
 	overflow-x: hidden;
 	line-height:62.5%;
+	
 }
 
 body{
@@ -94,6 +100,10 @@ body{
 	
 } */
 
+/* ------------------------
+INDEX + GENERAL STYLES
+--------------------------- */
+
 .topMenu{
 	display:flex;
 	align-items: center;
@@ -105,13 +115,14 @@ body{
 	color: white;
 	width: 100%;
 	font-size:2.4rem;
+	
 }
 
 .topMenu a {
 	color:white;
 }
 
-.mainImage{
+.heroImage{
 	background:url("../img/home/home-jumbotron.png") no-repeat bottom;
 	background-size:cover;
 	background-attachment: fixed;
@@ -204,7 +215,7 @@ body{
 	/* margin-top:-500px; */
 	transform: translate(0,-5.0rem);
 	padding: 3%;
-	letter-spacing: 3px;
+	letter-spacing: 10px;
 	border: 1px solid white;
 	
 	/* text-align: right; */
@@ -216,7 +227,7 @@ body{
 }
 
 .label h3{
-	font-size:2.4rem;
+	font-size:2rem;
 	text-align: center;
 }
 
@@ -271,11 +282,226 @@ small {
 	font-size:1.2rem;
 }
 
-@media (max-width:600px){
-	/* .topMenu{
+.full{
+	display:block;
+}
+
+.mobile{
+	display: none;
+}
+
+.copyright{
+	text-align: center; 
+	margin:4% auto 0 auto; 
+	display:block; 
+	padding-bottom:0
+}
+
+
+/* ------------------------
+CONTACT PAGE STYLES
+--------------------------- */
+.heroImage.contact{
+	height:50vh;
+	background-image: url(../img/contact/contact-jumbotron.png);
+	background-position-y: bottom;
+	/* background-size: cover; */
+	background-attachment: fixed;
+	margin-bottom: 2%;
+	/* background-position: right; */
+}
+
+.part.contact{
+	width:90%;
+	display:flex;
+	justify-content: space-around;
+	margin: 6% auto;
+}
+
+.input.contact{
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+.button.contact{
+	width:auto;
+	padding:2.5% 10%;
+}
+
+textarea{
+	width:100%;
+	min-height:20vh;
+}
+
+.formItem{
+	padding-bottom:5%;
+}
+
+.city{
+	margin-top:15%;
+}
+
+.city h3{
+	font-weight: bold;
+	font-size:2rem;
+}
+
+form{
+	width:50%;
+}
+
+#overlay {
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer; /* Add a pointer on hover */
+}
+
+/* @media(max-width:501px){
+	.mobile{
+		display: none;
+	}
+
+	.full{
+		display: block;
+	}
+} */
+
+@media (max-width:768px){
+
+	/* --------------
+	INDEX & GENERAL STYLES
+	----------------- */
+	.topMenu{
 		justify-content: space-between;
-		text-align: left;
+		padding: 4%;
+	}
+	
+	.topMenu img{
+		height:3.5rem;
+	}
+
+	.topMenu a{
+		font-size:4rem;
+		
+	}
+
+	.heroImage{
+		height:50vh;
+		padding-bottom:2%;
+	}
+
+	.part{
+		width:100%;
+	}
+
+	.item{
+		width:90%;
+		margin:0 auto;
+		flex-direction: column;
+	}
+
+	.item div{
+		width:100%;
+	}
+
+	.item img{
+		width:100%;
+		height:40vh;
+		margin:0 auto 5% auto;
+	}
+
+	.button{
+		width:100%;
+		margin-bottom: 7%;
+	}
+
+	.label{
+		width:90%;
+		margin: 0 auto;
+		transform: translate(0,-3.0rem);
+		
+	}
+
+	h2{
+		padding-left:2%;
+	}
+
+	.label h3{
+		font-size:3rem;
+		padding:3%;
+	}
+
+	.mobile{
+		display: block;
+		height:100%;
+		width: 100%;
+	}
+
+	.full{
+		display: none;
+	}
+
+	.innerText{
+		width:90%;
+	}
+
+	.innerFooter{
+		flex-direction: column;
+	}
+
+	footer{
+		padding: 5%;
+	}
+
+	.innerFooter div{
+		padding-bottom: 3%;
+	}
+
+	.copyright {
+		/* margin: 0;
+		padding:0;
+		text-align: left; */
+		display: inline;
+	}
+
+	/* --------------
+	CONTACT STYLES
+	----------------- */
+
+	.part.contact{
+		width:90%;
+		display:flex;
+		justify-content: space-around;
+		margin: 15% auto;
+		flex-direction: column;
+	}
+
+	.subheading.formItem{
+		margin-bottom: 10%;
+	}
+
+	form{
+		width:100%;
+		margin-bottom: 10%;
+	}
+
+	.subheading{
+		padding-left:0;
+		margin-left:0;
+	}
+
+	/* button.contact{
+		margin-bottom:10%;
 	} */
+	
 }
 
 /* .first{
